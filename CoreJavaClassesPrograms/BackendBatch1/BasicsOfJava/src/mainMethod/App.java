@@ -1,0 +1,86 @@
+package mainMethod;
+
+import java.io.IOException;
+
+import com.FileHandlingExample.FileHandlingExample;
+
+import CollectionExamples.CollectionExample;
+import CoreConcepts.ErrorHandlingExample;
+import CoreConcepts.FunctionalInterfaceExample;
+import CoreConcepts.ThreadClass1;
+import CoreConcepts.ThreadClass2;
+import WrapperClassesExample.WrapperClass;
+
+public class App {
+
+	public static void main(String[] args) {
+//		IntroToOOPs.method4();
+//		
+//		Birds bird1 = new Birds();
+//		System.out.println(bird1);
+		
+//		Publishers xyz = new Publishers();
+//		xyz.publishBook();
+		
+//		BikeInterface suzki = new Suzuku();
+//		BikeInterface RE = new RoyalEnfield();
+////		suzki.setBikeName("Yamaha");
+////		System.out.println(suzki.getBikeName());
+//		suzki.start();
+//		RE.start();
+//		
+//		BikeInterface bike = new BikeInterface() {
+//
+//			@Override
+//			public void start() {
+//				System.out.println("Bike started");
+//			}
+//
+//			@Override
+//			public void stop() {
+//				System.out.println("Bike stopped");
+//			}
+//
+//			@Override
+//			public void drive() {
+//				System.out.println("Driving a bike");
+//			}
+//			
+//		};
+//		
+//		bike.start();
+		
+//		FunctionalInterfaceExample fe = (int x, int y) -> x + y;
+//			
+//		System.out.println(fe.add(3, 5));
+//		System.out.println("First line");
+		
+//		ErrorHandlingExample.ExceptionExample();
+//		System.out.println("Line after the exception");
+//		
+//		ErrorHandlingExample err = new ErrorHandlingExample();
+//		
+//		err.check(2, 0);
+		
+//		ThreadClass1 t1 = new ThreadClass1();
+//		ThreadClass2 t2 = new ThreadClass2();
+//		
+//		t1.start();
+//		t2.start();
+//		System.out.println("After the thread start method");
+//		
+//		for(int i = 1; i <= 100; i ++) {
+//			System.out.println(i+" main method loop");
+//		}
+		
+//		WrapperClass.example();
+//		CollectionExample.streamExample();
+		try {
+			FileHandlingExample.handlingExample();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

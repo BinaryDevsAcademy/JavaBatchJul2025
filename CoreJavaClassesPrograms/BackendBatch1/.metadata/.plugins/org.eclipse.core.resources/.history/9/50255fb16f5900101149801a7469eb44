@@ -1,0 +1,9 @@
+package basics;
+
+public class File1 {
+	public static void main(String[] args) {
+		Student student1 = new Student();
+		student1.studentId = 1;
+		student1.studentPhone = 0987654321;
+	}
+}

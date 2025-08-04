@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;CoreConcepts.ThreadClass&apos; to &apos;ThreadClass1&apos;&#x0D;&#x0A;- Original project: &apos;BasicsOfJava&apos;&#x0D;&#x0A;- Original element: &apos;CoreConcepts.ThreadClass&apos;&#x0D;&#x0A;- Renamed element: &apos;CoreConcepts.ThreadClass1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ThreadClass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;CoreConcepts{ThreadClass.java[ThreadClass" matchStrategy="1" name="ThreadClass1" qualified="false" references="true" similarDeclarations="false" stamp="1752563707777" textual="false" version="1.0"/>
+</session>

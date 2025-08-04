@@ -1,0 +1,9 @@
+package com.FileHandlingExample;
+
+public class FileHandlingExample {
+	private final String filePath = "C:\\Users\\Dell\\Downloads\\";
+	
+	public static void handlingExample() {
+		
+	}
+}

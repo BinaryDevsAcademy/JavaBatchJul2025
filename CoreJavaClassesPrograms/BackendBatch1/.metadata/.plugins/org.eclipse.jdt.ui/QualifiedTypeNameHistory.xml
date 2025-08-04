@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="CoreConcepts.Calculator"/>
+    <fullyQualifiedTypeName name="CoreConcepts.StringsConcept"/>
+    <fullyQualifiedTypeName name="CoreConcepts.MethodOverloadingConcept"/>
+    <fullyQualifiedTypeName name="CoreConcepts.IntroToOOPs"/>
+    <fullyQualifiedTypeName name="CoreConcepts.Suzuku"/>
+    <fullyQualifiedTypeName name="CoreConcepts.BikeInterface"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="CoreConcepts.ErrorHandlingExample"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="CoreConcepts.CustomException"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="CoreConcepts.ThreadClass1"/>
+    <fullyQualifiedTypeName name="CoreConcepts.ThreadClass2"/>
+    <fullyQualifiedTypeName name="WrapperClassesExample.WrapperClass"/>
+    <fullyQualifiedTypeName name="java.text.CollationElementIterator"/>
+    <fullyQualifiedTypeName name="CollectionExamples.CollectionExample"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
+    <fullyQualifiedTypeName name="com.FileHandlingExample.FileHandlingExample"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,30 @@
+package com.FileHandlingExample;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class FileHandlingExample {
+	private static final String filePath = "C:\\Users\\Dell\\Downloads\\";
+	
+	public static void handlingExample() throws IOException {
+		System.out.println("File Handling Example");
+		File file = new File(filePath+"sample.txt");
+
+		if(!file.exists()) {
+			file.createNewFile();
+			System.out.println("File created at the given path");
+		}
+		
+//		FileWriter fw = new FileWriter(file, true);
+//		
+//		fw.append("\n This is a second line added when created the file");
+//		
+//		fw.close();
+		
+		FileReader fr = new FileReader(file);
+		Scanner read = new Scanner(fr);
+		System.out.println(read.nextLine());
+	}
+}

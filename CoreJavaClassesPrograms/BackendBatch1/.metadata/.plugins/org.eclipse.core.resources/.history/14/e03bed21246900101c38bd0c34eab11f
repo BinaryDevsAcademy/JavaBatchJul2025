@@ -1,0 +1,122 @@
+package CollectionExamples;
+
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class CollectionExample {
+	//arrays - homo - data | fixed size - 100 - 10
+	//strings - collection of characters - immutable 
+	//collections - list, set, map
+	//list - allow duplicates, dynamic in size, Hetro - data
+	//list - ArrayList, LinkedList, Stack
+	
+	public static void ListExample() {
+//		Vector<Integer> list1 = new Vector<>();
+//		list1.add(11);
+////		list.add("Name");
+////		list.add(true);
+////		list.add(54.3);
+//		list1.add(12);
+//		list1.add(13);
+//		list1.add(14);
+//		
+//		ArrayList list = new ArrayList();
+//		list.add(1);
+////		list.add("Name");
+////		list.add(true);
+////		list.add(54.3);
+//		list.add(2);
+//		list.add(3);
+//		list.add(14);
+//		list.add(1);
+//		list.add(12);
+//		list.add(4);
+////		list.add(list1);
+////		list.addAll(list1);
+//		list.add(11);		
+//		list.add(13);
+//		System.out.println("list : "+list);
+//		System.out.println("list1 : "+list1);
+//		System.out.println("List contains 3 : "+list.contains(3));
+//		System.out.println("list contains "+list1+" : "+list.containsAll(list1));
+//		System.out.println("index of "+list.indexOf(1));
+//		System.out.println("last index of "+ list.lastIndexOf(1));
+//		System.out.println("first element "+list.getFirst());
+//		System.out.println("last element "+list.getLast());
+//		System.out.println("To check if 2 lists are equal or not "+list.equals(list1));
+//		System.out.println("Size : "+list.size());
+//		System.out.println("0 index value "+list.get(0));
+//		System.out.println("check if a list is empty or not : "+list.isEmpty());
+//		System.out.println("used to remove element "+list.remove(0));
+//		System.out.println("used to remove elements in a list using another list "
+//				+ "and doesn't look for positions : "+list.removeAll(list1));
+//		System.out.println(list.set(1, 67));
+//		System.out.println(list.reversed());
+//		list.clear();
+//		System.out.println("Elements in list : ");
+//		for(Object item : list) {
+//			System.out.println(item);
+//		}
+		
+//		Stack<Integer> stk = new Stack<>();
+//		
+//		stk.push(1);
+//		stk.push(2);
+//		stk.push(3);
+//		stk.push(4);
+//		System.out.println(stk);
+//		System.out.println("Searching element "+stk.search(1));
+//		System.out.println(stk.peek());
+//		System.out.println(stk.pop());
+//		System.out.println(stk);
+	}
+	
+	public static void setExample() {
+//		1,2,1,3 - 1,2,3
+//		HashSet, TreeSet, LinkedHashSet
+		Set set = new LinkedHashSet();
+		
+		set.add(3);
+		set.add(4);
+		set.add(6);
+		set.add(1);
+		set.add(2);
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		set.add(4);
+		
+		System.out.println(set);
+		System.out.println(set.size());
+		System.out.println(set.contains(4));
+		System.out.println(set.hashCode());
+		System.out.println(set.remove(4));
+//		System.out.println(set.ceiling(5));
+//		System.out.println(set.floor(5));
+//		System.out.println("first value in treeset "+set.first());
+//		System.out.println("last value in treeset "+set.last());
+//		System.out.println(set.getFirst());
+//		System.out.println(set.getLast());
+//		System.out.println("Pool first : "+set.pollFirst());
+		
+		for(Object item : set) {
+			System.out.println(item);
+		}
+	}
+	
+	public static void mapExample() {
+		//data will store inform of key pair value
+		//key : data
+		//HashMap, TreeMap, LinkedHashMap
+		
+		HashMap map = new HashMap();
+		map.put("name", "Tony");
+		map.put("age", 25);
+		map.put("gender", "male");
+		map.putIfAbsent("mineral", "Iron");
+		map.putAll(map);
+		
+		System.out.println(map.get("name"));
+	}
+}
