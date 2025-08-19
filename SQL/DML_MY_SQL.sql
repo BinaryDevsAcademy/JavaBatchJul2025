@@ -18,6 +18,19 @@ CREATE TABLE location(
     state_name VARCHAR(40) NOT NULL
 );
 
+INSERT INTO location (area_name, area_pincode, city_name, state_name) VALUES
+('Connaught Place', 110001, 'New Delhi', 'Delhi'),
+('Bandra West', 400050, 'Mumbai', 'Maharashtra'),
+('Whitefield', 560066, 'Bangalore', 'Karnataka'),
+('Gachibowli', 500032, 'Hyderabad', 'Telangana'),
+('Salt Lake', 700091, 'Kolkata', 'West Bengal'),
+('Anna Nagar', 600040, 'Chennai', 'Tamil Nadu'),
+('Civil Lines', 302006, 'Jaipur', 'Rajasthan'),
+('Alkapuri', 390007, 'Vadodara', 'Gujarat'),
+('Sector 17', 160017, 'Chandigarh', 'Chandigarh'),
+('Vastrapur', 380015, 'Ahmedabad', 'Gujarat');
+
+
 CREATE TABLE customers(
 	customer_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_name VARCHAR(80) NOT NULL,
@@ -28,6 +41,19 @@ CREATE TABLE customers(
     accountCreationTime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (customer_city) REFERENCES location(location_id)
 );
+
+INSERT INTO customers (customer_name, customer_phone, customer_email, customer_password, customer_city) VALUES
+('Rahul Sharma', 9876543210, 'rahul.sharma@example.com', 'Rahul@123', 1),
+('Priya Verma', 9123456780, 'priya.verma@example.com', 'Priya@456', 2),
+('Amit Kumar', 9988776655, 'amit.kumar@example.com', 'Amit@789', 3),
+('Sneha Reddy', 9090909090, 'sneha.reddy@example.com', 'Sneha@111', 4),
+('Vikram Singh', 9876501234, 'vikram.singh@example.com', 'Vikram@222', 2),
+('Anjali Nair', 9123009876, 'anjali.nair@example.com', 'Anjali@333', 1),
+('Rohan Das', 9898989898, 'rohan.das@example.com', 'Rohan@444', 5),
+('Meena Iyer', 9765432109, 'meena.iyer@example.com', 'Meena@555', 3),
+('Karthik Rao', 9345678901, 'karthik.rao@example.com', 'Karthik@666', 4),
+('Pooja Patel', 9789456123, 'pooja.patel@example.com', 'Pooja@777', 1);
+
 
 -- DML : 
 -- 1. insert
