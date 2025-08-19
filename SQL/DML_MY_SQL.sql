@@ -55,6 +55,42 @@ INSERT INTO customers (customer_name, customer_phone, customer_email, customer_p
 ('Pooja Patel', 9789456123, 'pooja.patel@example.com', 'Pooja@777', 1);
 
 
+CREATE TABLE sales (
+    sale_id INT PRIMARY KEY AUTO_INCREMENT,
+    customer_id INT NOT NULL,
+    sale_date DATE NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    total_amount DECIMAL(10,2) GENERATED ALWAYS AS (quantity * price) STORED,
+    payment_method VARCHAR(50),
+    status VARCHAR(20) DEFAULT 'Completed',
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+
+INSERT INTO sales (customer_id, sale_date, quantity, price, payment_method, status) VALUES
+(1, '2025-08-01', 2, 499.99, 'Credit Card', 'Completed'),
+(2, '2025-08-01', 1, 799.00, 'UPI', 'Pending'),
+(3, '2025-08-02', 3, 250.00, 'Cash', 'Completed'),
+(4, '2025-08-02', 5, 120.50, 'Debit Card', 'Completed'),
+(5, '2025-08-03', 2, 999.00, 'Net Banking', 'Completed'),
+(6, '2025-08-03', 1, 450.75, 'Credit Card', 'Completed'),
+(7, '2025-08-04', 4, 150.25, 'UPI', 'Pending'),
+(8, '2025-08-04', 6, 80.00, 'Cash', 'Completed'),
+(9, '2025-08-05', 3, 600.00, 'Credit Card', 'Completed'),
+(10, '2025-08-05', 2, 1100.00, 'Debit Card', 'Completed'),
+(1, '2025-08-06', 1, 750.50, 'Net Banking', 'Completed'),
+(2, '2025-08-06', 7, 99.99, 'UPI', 'Pending'),
+(3, '2025-08-07', 5, 200.00, 'Cash', 'Completed'),
+(4, '2025-08-07', 2, 850.00, 'Credit Card', 'Completed'),
+(5, '2025-08-08', 1, 2999.00, 'Debit Card', 'Pending'),
+(6, '2025-08-08', 4, 400.00, 'Net Banking', 'Completed'),
+(7, '2025-08-09', 3, 125.50, 'UPI', 'Completed'),
+(8, '2025-08-09', 6, 175.75, 'Cash', 'Completed'),
+(9, '2025-08-10', 2, 600.00, 'Credit Card', 'Completed'),
+(10, '2025-08-10', 8, 50.00, 'UPI', 'Completed');
+
+
 -- DML : 
 -- 1. insert
 -- SYNTAX : 
