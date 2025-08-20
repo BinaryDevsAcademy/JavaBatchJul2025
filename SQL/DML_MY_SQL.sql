@@ -117,6 +117,13 @@ INSERT INTO customers(
 ("Harry", 9907654432, "harry@gmail.com","Harry@1234"),
 ("Rom", 8456654432, "rom@gmail.com","Rom@1234");
 
+ALTER TABLE customers
+ADD gender ENUM('Male','Female','Other') AFTER customer_name;
+
+UPDATE customers SET gender = 'Male' WHERE customer_id IN (1,3,5,7,9);
+UPDATE customers SET gender = 'Female' WHERE customer_id IN (2,4,6,8,10);
+
+
 INSERT INTO location(
 	area_name, area_pincode, city_name, state_name
 ) VALUES

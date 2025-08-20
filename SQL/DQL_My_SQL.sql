@@ -62,4 +62,32 @@ SELECT AVG(quantity) FROM sales;
 
 -- Assignment
 -- Find the MAXIMUM total amount in the sales table
+SELECT MAX(total_amount) FROM sales;
 -- Find the MINIMUM total Amount in the sales table
+SELECT MIN(total_amount) FROM sales;
+
+-- We can group the data inside the table
+-- By using group By
+-- SELECT grp_col FROM tableName GROUP BY grp_base_col
+
+SELECT sale_date FROM sales GROUP BY sale_date;
+
+-- show the orders count on each date;
+SELECT sale_date, COUNT(sale_id) FROM sales GROUP BY sale_date;
+
+-- find the total price for each date in sales table
+SELECT sale_date, SUM(total_amount) FROM sales GROUP BY sale_date;
+
+-- find the total number of male and female customers in customers table
+SELECT gender, COUNT(gender) FROM customers GROUP BY gender;
+
+-- find how many customers are living in an area
+SELECT customer_city, COUNT(customer_city) FROM customers GROUP BY customer_city;
+
+-- find the count of sales in a day where the quantity is greater than equal 3
+
+-- find the average revenue generated on each day in sales table
+SELECT sale_date, AVG(total_amount) FROM sales GROUP BY sale_date;
+
+-- group the dates where there avg price is greater than or equal to 700
+SELECT sale_date, AVG(total_amount) AS total_amount FROM sales HAVING total_amount >= 700
