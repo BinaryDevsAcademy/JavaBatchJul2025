@@ -225,6 +225,7 @@ DROP VIEW customersDataWithLocation;
 -- root - admin
 -- database - tables - access - users
 -- DQL, DML, DDL
+
 -- To find the users in database
 SELECT User, host FROM mysql.user;	
 
@@ -237,3 +238,72 @@ GRANT ALL PRIVILEGES ON brollyacademy.sales TO 'dinesh'@'localhost';
 
 -- REVOKE - Retrives the permission from the user
 REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'dinesh'@'localhost';
+
+-- to remove user from database
+DROP USER "dinesh"@"localhost";
+
+
+
+-- TCL - Transaction Control Lang
+SELECT * FROM customers;
+
+SAVEPOINT starting_point;
+
+INSERT INTO customers(
+	customer_name, 
+    gender,
+    customer_phone,
+    customer_email,
+    customer_password,
+    customer_city
+) VALUES(
+	'Akash', "Male", 7865432019, 'aka@email.com','aka@1234', 6
+);
+
+SAVEPOINT customer_inserted;
+
+ROLLBACK TO starting_point;
+
+ROLLBACK TO customer_inserted;
+
+SELECT * FROM customers;
+
+COMMIT;
+
+-- We can go to and fro using save points
+-- for an example consider we are have savepoint1 after that we created another savepoint  savepoint2 and after that we created
+-- another savepoint savepoint3
+-- In total we are having 3 savepoints 
+-- if I rollback to savepoint1 then we lose savepoint2 and savepoint3
+-- even though we lost the savepoints the data in the table will be disappered but the autoincrement don't reset to prev value
+-- once we commit the data we will lose the savepoints
+
+-- stored procedures - functions in sql
+-- window functions
+
+-- DDL
+-- DML
+-- DQL - JOINS, UNION, INTERSECT, Agg, GROUP BY, OPERATORS, SUB QUERIES
+-- VIEWS
+-- DCL - user create, delete, GRANT
+-- TCL
+-- NORMALIZATION
+-- ACID properties
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
