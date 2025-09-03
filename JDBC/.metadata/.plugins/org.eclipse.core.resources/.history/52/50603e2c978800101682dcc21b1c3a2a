@@ -1,0 +1,13 @@
+package com.jdbcintro.databaselayer;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DatabaseConnector {
+	public void createConnection() {
+		String url;
+		String username = "root";
+		String password = "0000";
+		Connection connect = DriverManager
+	}
+}

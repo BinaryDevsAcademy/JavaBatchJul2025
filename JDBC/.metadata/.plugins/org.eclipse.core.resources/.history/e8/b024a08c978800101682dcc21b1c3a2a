@@ -1,0 +1,13 @@
+package com.jdbcintro.databaselayer;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DatabaseConnector {
+	public void createConnection() {
+		String url = "jdbc:mysql://127.0.0.1:3306/brollyacademy";
+		String username = "root";
+		String password = "0000";
+		Connection connect = DriverManager.getConnection(url,username,password);
+	}
+}
