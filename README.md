@@ -48,7 +48,7 @@ JavaBatchJul2025/
 |
 └── Notes/
 │
-├── SQL/                # (Coming Soon)
+├── SQL/       
 │
 ├── SpringFramework/    # (Coming Soon)
 │
