@@ -1,5 +1,0 @@
-package com.jdbcintro.databaselayer;
-
-public class DatabaseConnector {
-
-}
