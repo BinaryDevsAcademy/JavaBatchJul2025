@@ -6,8 +6,23 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.password">0000</property>
-        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/ecommerce_app</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/HibernateBatch1</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- will help us with the ddl commands - 
+        	create - will drop the table from database if it exists then creates a new table
+        	update - will not drop the table instead of the it will make changes and also keep the old data
+        -->
+        
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- here we are just using the show_sql property to display the sql queries -->
+        <property name="show_sql">true</property>
+        <!-- here we are just using the format_sql property to display the sql queries in a format-->
+        <property name="format_sql">true</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">
+        	org.hibernate.cache.ehcache.EhCacheRegionFactory
+        </property>
     </session-factory>
 </hibernate-configuration>
