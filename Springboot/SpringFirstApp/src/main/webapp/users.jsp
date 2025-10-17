@@ -4,10 +4,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>users page</title>
+<title>Users page</title>
 </head>
 <body>
-	<h1>Users page</h1>
-	<p>You see the data below</p>
+    <h1>Users page</h1>
+    <p>You see the data below:</p>
+
+    <%
+        // Get the 'name' parameter from the request
+        String name = request.getParameter("name");
+
+        if(name != null && !name.trim().isEmpty()) {
+    %>
+        <p><strong>Name:</strong> <%= name %></p>
+    <%
+        } else {
+    %>
+        <p>No name submitted yet.</p>
+    <%
+        }
+    %>
 </body>
 </html>

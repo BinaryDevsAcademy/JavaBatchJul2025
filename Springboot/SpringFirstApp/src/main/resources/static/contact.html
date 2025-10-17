@@ -2,10 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>contact</title>
+<title>Contact</title>
 </head>
 <body>
-	<h1>Contact page</h1>
-	<p>This is the contact page please contact developer</p>
+    <h1>Contact page</h1>
+    <p>This is the contact page. Please contact the developer.</p>
+
+    <!-- Contact Form -->
+    <form action="/users" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>

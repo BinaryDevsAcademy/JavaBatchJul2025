@@ -1,11 +1,13 @@
 package com.example.demo.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class WebController {
+
 
 
 	@RequestMapping("/")
@@ -19,8 +21,11 @@ public class WebController {
 		return "contact.html";
 	}
 	
-	@RequestMapping("/users")
-	public String users() {
+	//request - default --> get method
+//	@RequestMapping(method = RequestMethod.GET, value="/users")
+	@PostMapping("/users")
+	public String users(@RequestParam("name") String name) {
+		System.out.println(name);
 		return "users.jsp";
 	}
 	
