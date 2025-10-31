@@ -50,9 +50,9 @@ JavaBatchJul2025/
 │
 ├── SQL/       
 │
-├── SpringFramework/    # (Coming Soon)
+├── SpringFramework/  
 │
-├── HibernateORM/       # (Coming Soon)
+├── HibernateORM/     
 │
 └── README.md
 
